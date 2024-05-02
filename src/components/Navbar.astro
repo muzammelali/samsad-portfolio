@@ -1,0 +1,41 @@
+---
+import { Image } from "astro:assets";
+import logo from "../assets/SR_LOGO.png";
+const navItems = [
+  {
+    text: "Home",
+    href: "/",
+  },
+  {
+    text: "Case Study",
+    href: "Case-Study",
+  },
+  {
+    text: "Digital Product",
+    href: "Digital-Product",
+  },
+  {
+    text: "Experience",
+    href: "Experience",
+  },
+  {
+    text: "Connect",
+    href: "Connect",
+  },
+];
+---
+
+<nav class="bg-bgm flex justify-between px-10 py-6 rounded-[20px] mb-9">
+	<div>
+		<Image src={logo} alt="logo" class="max-w-14"/>
+	</div>
+	<div>
+		<ul class="nav-items md:flex gap-6 items-center ">
+			{navItems.map((i) => (
+				<li class="text-white last:bg-pmb last:px-6 last:py-2.5 last:rounded-lg">
+					<a href="{i.href}">{i.text}</a>
+				</li>
+			))}
+		</ul>
+	</div>
+</nav>
