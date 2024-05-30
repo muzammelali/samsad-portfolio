@@ -1,0 +1,18 @@
+---
+const { href } = Astro.props;
+---
+
+<a href={href} class="py-4 px-10 rounded-lg	block w-fit m-auto font-medium text-white" class:list={["button", Astro.props.class]}><slot /></a>
+
+<style>
+    .blue{
+        background-color: #2979F4;
+    }
+    .orange{
+        background-color: #E0442C;
+    }
+    .left{
+        margin-right: auto;
+        margin-left: 0;
+    }
+</style>

@@ -1,12 +1,27 @@
 ---
-
+import { Icon } from "astro-icon/components";
+import { Image } from "astro:assets";
+import banner_image from "../assets/bannerImage.png";
 ---
 
-<header>
-    <div>
-        
+<header class="bg-bgm py-28 px-16 rounded-[30px] grid grid-cols-2 gap-5 mb-24">
+    <div class="w-50">
+        <div class="mb-7 flex gap-3 py-2 px-4 rounded-3xl bg-[#1A3927] w-fit items-center">
+            <Icon name="roundDot" size={14} />
+            <p class="font-medium text-[#009A3E] uppercase ">Available for work</p>
+        </div>
+        <h1 class="text-white text-6xl font-bold leading-tight mb-11">I’m Samsad <br/>
+            <span class="text-pmb">Product Design</span></h1>
+        <div class="flex gap-8">
+            <li class="list-none"><a href="#" class="btn-blue">hey@samsad.com</a></li>
+            <li class="list-none"><a href='#'> <Icon name="instagram" size={28}/></a></li>
+            <li class="list-none"><a href='#'> <Icon name="DRIBBBLE" size={28}/></a></li>
+            <li class="list-none"><a href='#'> <Icon name="BEHANCE" size={28}/></a></li>
+        </div>
     </div>
     <div>
-
+        <div>
+            <Image src={banner_image} alt="banner image" class="max-w-md mx-auto"/>
+        </div>
     </div>
 </header>

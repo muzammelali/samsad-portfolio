@@ -9,6 +9,8 @@ export default {
 		},
 		fontFamily: {
 		  sans: ["Lexend", "sans-serif"],
+		  Montserrat: ["Montserrat", "sans-serif"],
+		  Poppins: ["Poppins", "sans-serif"],
 		},
 		aria: {
 		  current: 'current="page"',
@@ -16,10 +18,12 @@ export default {
 		colors: {
 		  bgm: "#212121",
 		  bgm2 : "#E11D48",
+		  bgm3 : "#292A2B",
 		  pmb: "#196BE9",
 		  pmg: "#34A064",
 		  pmr: "#E11D48",
 		  pmo : "E0442C",
+		  textHover : "#cbcbcb",
 		},
 	  },
 	},

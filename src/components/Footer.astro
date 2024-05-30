@@ -1,0 +1,27 @@
+---
+import { Image } from "astro:assets";
+import SR_LOGO from "../assets/SR_LOGO.png";
+import behance from '../assets/behance.png';
+import dribble from '../assets/dribble.png';
+import instragram from "../assets/instragram.png";
+---
+
+<div class="bg-bgm rounded-[20px] py-8 px-16 flex justify-between items-center">
+    <div>
+        <p class="text-white font-Montserrat">© 2024 Samsad Rashid</p>
+    </div>
+    <div>
+        <Image src={SR_LOGO} alt="Logo" class="max-w-14" />
+    </div>
+    <div class="flex gap-9 items-center">
+        <div class="max-w-7">
+            <Image src={instragram} alt="Logo" class="object-contain" />
+        </div>
+        <div class="max-w-7">
+            <Image src={dribble} alt="Logo" class="object-contain" />
+        </div>
+        <div class="max-w-7">
+            <Image src={behance} alt="Logo" class="object-contain" />
+        </div>
+    </div>
+</div>

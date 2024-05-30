@@ -1,0 +1,53 @@
+---
+import { Image } from "astro:assets";
+import digitalOcean from "../assets/digitalocean.png";
+import laptopFront from "../assets/laptop_front.png";
+import mailChim from "../assets/mailchim.png";
+import slackImage from "../assets/slack.png";
+---
+
+<div class="grid grid-cols-2 gap-9">
+    <div class="py-9 px-12 bg-bgm rounded-2xl mb-4 h-full">
+        <h2 class="text-[40px] text-white font-bold font-Montserrat">Journey So Far...</h2>
+        <p class="text-xl text-white mb-5">Great products and experiences are built by great teams. I'll be more than honored to be part of yours. Let's talk.</p>
+        <Image src={laptopFront} alt="Man in front of laptop" class="max-w-[350px] mx-auto"/>
+    </div>
+    <div class="flex flex-col gap-y-9">
+        <div class="p-8 bg-bgm border border-[#0F1341] rounded-xl flex gap-8 items-center">
+            <div>
+                <Image src={slackImage} alt="Slack" class="w-[58px]"/>                
+            </div>
+            <div>
+                <h2 class="text-white text-2xl mb-3 font-Montserrat">Slack</h2>
+                <p class="text-[#9D9D9D] font-xs">Product Design - 4 Years Experince</p>
+            </div>
+        </div>
+        <div class="p-8 bg-bgm border border-[#0F1341] rounded-xl flex gap-8 items-center">
+            <div>
+                <Image src={slackImage} alt="Slack" class="w-[58px]"/>                
+            </div>
+            <div>
+                <h2 class="text-white text-2xl mb-3 font-Montserrat">Slack</h2>
+                <p class="text-[#9D9D9D] font-xs">Product Design - 4 Years Experince</p>
+            </div>
+        </div>
+        <div class="p-8 bg-bgm border border-[#0F1341] rounded-xl flex gap-8 items-center">
+            <div>
+                <Image src={digitalOcean} alt="Slack" class="w-[58px]"/>                
+            </div>
+            <div>
+                <h2 class="text-white text-2xl mb-3 font-Montserrat">Digital Ocean</h2>
+                <p class="text-[#9D9D9D] font-xs">UI & Motion Designer - 4 Years Experince</p>
+            </div>
+        </div>
+        <div class="p-8 bg-bgm border border-[#0F1341] rounded-xl flex gap-8 items-center">
+            <div>
+                <Image src={mailChim} alt="Slack" class="w-[58px]"/>                
+            </div>
+            <div>
+                <h2 class="text-white text-2xl mb-3 font-Montserrat">Mailchim</h2>
+                <p class="text-[#9D9D9D] font-xs">UI Designer - 4 Years Experince</p>
+            </div>
+        </div>
+    </div>
+</div>

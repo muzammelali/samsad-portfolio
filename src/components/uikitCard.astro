@@ -1,0 +1,38 @@
+---
+interface Props{
+    cardImage : string;
+}
+const {cardImage,href} = Astro.props;
+import { Image } from "astro:assets";
+import figmaIcon from "../assets/FigmaIcon.png";
+---
+
+
+<a href={href}>
+    <div class="h-full rounded-2xl truncate cardBody" class:list={["UikitCard", Astro.props.class]}>
+        <div class="py-8 px-8">
+            <img src={cardImage} alt="Ui Kit Image" class="aspect-square w-full mx-auto"/>
+        </div>
+        <div class="py-4 px-6 flex justify-between items-center bg-bgm">
+            <div>
+                <h3 class="text-white text-xl mb-2">Real Estate App Design</h3>
+                <h2 class="text-white text-3xl font-bold">$25</h2>
+            </div>
+            <div>
+                <Image src={figmaIcon} alt="Figma Icon" class="w-6"/>
+            </div>
+        </div>
+    </div>
+</a>
+
+<style>
+    .myrtle{
+        background-color: #415763;
+    }
+    .blue{
+        background-color: #183873;
+    }
+    .green{
+        background-color: #105345;
+    }
+</style>

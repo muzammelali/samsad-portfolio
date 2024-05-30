@@ -1,0 +1,54 @@
+---
+
+interface Props {
+    title : string;
+    category : string;
+	projectDate : string;
+	projectUrl : string;
+    Shadakah1: string;
+    Shadakah2: string;
+    Shadakah3: string;
+    Shadakah4: string;
+    Shadakah5: string;
+}
+
+const { title, category,projectDate,projectUrl,Shadakah1,Shadakah2,Shadakah3,Shadakah4,Shadakah5 } = Astro.props;
+
+---
+
+<section class="rounded-[20px] overflow-hidden">
+    <div class="grid grid-cols-3 justify-center items-center px-10 py-7 bg-bgm3">
+        <p class="text-white text-base">{title}</p>
+        <h3 class="text-white text-center text-2xl">{category}</h3>
+        <p class="text-white text-end text-base">{projectDate}</p>
+    </div>
+    <div class="flex gap-4 py-5 px-5 bg-bgm">
+        <div class="rounded-[10px] overflow-hidden w-5/12">
+            <img class="h-full object-cover" src={Shadakah1} alt="Shadakah1" />
+        </div>
+
+        <div class="rounded-[10px] overflow-hidden flex
+        flex-col gap-5 w-4/12">
+            <div class="rounded-[10px] overflow-hidden h-1/2 bg-bgm3"><img class="object-cover object-top" src={Shadakah2} alt="Shadakah2" /></div>
+            <div class="rounded-[10px] overflow-hidden h-1/2"><img class="object-cover object-top" src={Shadakah3} alt="Shadakah3" /></div>
+        </div>
+
+        <div class="rounded-[10px] overflow-hidden flex
+        flex-col gap-5 w-3/12">
+            <div class="h-1/2 flex
+            flex-col gap-4">
+                <a href={projectUrl} class="rounded-[10px] h-1/2 flex items-center justify-center overflow-hidden bg-pmg hover:bg-[#2c8d58]">
+                        <h3 class="text-base font-medium">View Project</h3>                                      
+                </a>
+                <div class="rounded-[10px] h-1/2 w-100 overflow-hidden flex items-center justify-center bg-bgm3 p-5">
+                    <img class="object-cover object-top" src={Shadakah4} alt="Shadakah3" />
+                </div>
+            </div>
+            <div class="h-1/2">
+                <div class="rounded-[10px] overflow-hidden">
+                    <img class="object-cover object-top w-full" src={Shadakah5} alt="Shadakah2" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
