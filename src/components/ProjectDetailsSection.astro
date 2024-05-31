@@ -1,0 +1,63 @@
+---
+import ProjectDetails from '../components/ProjectDetails.astro';
+import Button from '../components/generalButton.astro';
+
+const Shadakah1 = "/shadakah1.png";
+const Shadakah2 = "/shadakah2.png";
+const Shadakah3 = "/shadakah3.png";
+const Shadakah4 = "/shadakah4.png";
+const Shadakah5 = "/shadakah5.png";
+const lms1 = "/lms1.png";
+const lms2 = "/lms2.png";
+const lms3 = "/lms3.png";
+const lms4 = "/lms4.png";
+const lms5 = "/lms5.png";
+const healthX1 = "/healthX1.png";
+const healthX2 = "/healthX2.png";
+const healthX3 = "/healthX3.png";
+const healthX5 = "/healthX5.png";
+---
+
+    <ProjectDetails 
+        title = {'Islamic Foundation'}
+        category = {'Sadakah'}
+        projectDate = {'2024'}
+        projectUrl = {'/islamic-foundation'}
+        Shadakah1 = {Shadakah1}
+        Shadakah2 = {Shadakah2}
+        Shadakah3 = {Shadakah3}
+        Shadakah4 = {Shadakah4}
+        Shadakah5 = {Shadakah5}
+    />
+
+    <div class="py-6"></div>
+    
+    <ProjectDetails 
+        title = {'LMS'}
+        category = {'TuitionApp'}
+        projectDate = {'2023'}
+        projectUrl = {'/lms'}
+        Shadakah1 = {lms1}
+        Shadakah2 = {lms2}
+        Shadakah3 = {lms3}
+        Shadakah4 = {lms4}
+        Shadakah5 = {lms5}
+    />
+
+    <div class="py-6"></div>
+    
+    <ProjectDetails 
+        title = {'HealthTech'}
+        category = {'HealthX'}
+        projectDate = {'2024'}
+        projectUrl = {'/healthX'}
+        Shadakah1 = {healthX1}
+        Shadakah2 = {healthX2}
+        Shadakah3 = {healthX3}
+        Shadakah4 = {lms4}
+        Shadakah5 = {healthX5}
+    />
+
+    <div class="py-6"></div>
+
+		<Button href="/projects" class="blue">Show More</Button>

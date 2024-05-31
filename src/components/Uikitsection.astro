@@ -1,0 +1,20 @@
+---
+import Button from '../components/generalButton.astro';
+import UikitCard from '../components/uikitCard.astro';
+
+
+
+const cardImage1 = "/RentX2.png"
+const cardImage2 = "/cardImage2.png"
+const cardImage3 = "/SpeakIn1.png"
+---
+
+<section class="py-14">
+    <h2 class="text-white mb-10 text-center font-bold text-[40px] font-Montserrat not-italic">UIKit</h2>
+    <div class="grid-cols-3 grid gap-7 mb-10">
+        <UikitCard cardImage={cardImage1} href="#" class="myrtle" />
+        <UikitCard cardImage={cardImage2} href="#" class="blue" />
+        <UikitCard cardImage={cardImage3} href="#" class="green" />
+    </div>
+    <Button href="/about" class="blue">Show More</Button>
+</section>

@@ -3,75 +3,28 @@ import Footer from '../components/Footer.astro';
 import Hero from '../components/Hero.astro';
 import JourneySection from '../components/JourneySection.astro';
 import Navbar from '../components/Navbar.astro';
-import ProjectDetails from '../components/ProjectDetails.astro';
+import ProjectDetailsSection from '../components/ProjectDetailsSection.astro';
 import ProjectIdea from '../components/ProjectIdea.astro';
+import UikitSection from '../components/Uikitsection.astro';
 import WorkWith from '../components/WorkWith.astro';
-import UikitCard from '../components/uikitCard.astro';
 import Layout from '../layouts/Layout.astro';
 
-import Button from '../components/generalButton.astro';
-
-const Shadakah1 = "/shadakah1.png";
-const Shadakah2 = "/shadakah2.png";
-const Shadakah3 = "/shadakah3.png";
-const Shadakah4 = "/shadakah4.png";
-const Shadakah5 = "/shadakah5.png";
-const lms1 = "/lms1.png";
-const lms2 = "/lms2.png";
-const lms3 = "/lms3.png";
-const lms4 = "/lms4.png";
-const lms5 = "/lms5.png";
-
-const cardImage1 = "/RentX2.png"
-const cardImage2 = "/cardImage2.png"
-const cardImage3 = "/SpeakIn1.png"
 ---
 
 <Layout>
 	<main class="py-10 container">
 		<Navbar />
 		<Hero></Hero>
-		<ProjectDetails 
-			title = {'Islamic Foundation'}
-			category = {'Sadakah'}
-			projectDate = {'2024'}
-			projectUrl = {'2024'}
-			Shadakah1 = {Shadakah1}
-			Shadakah2 = {Shadakah2}
-			Shadakah3 = {Shadakah3}
-			Shadakah4 = {Shadakah4}
-			Shadakah5 = {Shadakah5}
-		/>
+		<ProjectDetailsSection />
 		<div class="py-6"></div>
-		<ProjectDetails 
-			title = {'LMS'}
-			category = {'TuitionApp'}
-			projectDate = {'2023'}
-			projectUrl = {'2024'}
-			Shadakah1 = {lms1}
-			Shadakah2 = {lms2}
-			Shadakah3 = {lms3}
-			Shadakah4 = {lms4}
-			Shadakah5 = {lms5}
-		/>
+		<UikitSection />
 		<div class="py-6"></div>
-		<Button href="/about" class="blue">Show More</Button>
-		<div class="py-6"></div>
-		<section class="py-14">
-			<h2 class="text-white mb-10 text-center font-bold text-[40px] font-Montserrat not-italic">UIKit</h2>
-			<div class="grid-cols-3 grid gap-7 mb-10">
-				<UikitCard cardImage={cardImage1} href="#" class="myrtle" />
-				<UikitCard cardImage={cardImage2} href="#" class="blue" />
-				<UikitCard cardImage={cardImage3} href="#" class="green" />
-			</div>
-			<Button href="/about" class="blue">Show More</Button>
-		</section>
 		<JourneySection />
-		<div class="py-6"></div>
+		<div class="pt-[100px]"></div>
 		<WorkWith />
-		<div class="py-6"></div>
+		<div class="pt-[100px]"></div>
 		<ProjectIdea />
-		<div class="py-6"></div>
+		<div class="pt-[60px]"></div>
 		<Footer />
 	</main>
 </Layout>
