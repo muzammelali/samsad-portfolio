@@ -17,28 +17,28 @@ const { title, category,projectDate,projectUrl,Shadakah1,Shadakah2,Shadakah3,Sha
 ---
 
 <section class="rounded-[20px] overflow-hidden">
-    <div class="grid grid-cols-3 justify-center items-center px-10 py-7 bg-bgm3">
+    <div class="grid grid-cols-3 justify-center items-center px-5 md:px-10 py-5 md:py-7 bg-bgm3">
         <p class="text-white text-base">{title}</p>
-        <h3 class="text-white text-center text-2xl">{category}</h3>
+        <h3 class="text-white text-center text-xl md:text-2xl">{category}</h3>
         <p class="text-white text-end text-base">{projectDate}</p>
     </div>
-    <div class="flex gap-4 py-5 px-5 bg-bgm">
-        <div class="rounded-[10px] overflow-hidden w-5/12">
+    <div class="flex flex-wrap md:flex-nowrap gap-4 py-5 px-5 bg-bgm">
+        <div class="rounded-[10px] overflow-hidden w-full md:w-5/12">
             <img class="h-full object-cover" src={Shadakah1} alt="Shadakah1" />
         </div>
 
         <div class="rounded-[10px] overflow-hidden flex
-        flex-col gap-5 w-4/12">
-            <div class="rounded-[10px] overflow-hidden h-1/2 bg-bgm3"><img class="object-cover object-top" src={Shadakah2} alt="Shadakah2" /></div>
-            <div class="rounded-[10px] overflow-hidden h-1/2"><img class="object-cover object-top" src={Shadakah3} alt="Shadakah3" /></div>
+        flex-col gap-5 w-[calc(50%-10px)] md:w-4/12">
+            <div class="rounded-[10px] overflow-hidden h-1/2 bg-bgm3"><img class="object-cover object-top h-full" src={Shadakah2} alt="Shadakah2" /></div>
+            <div class="rounded-[10px] overflow-hidden h-1/2"><img class="object-cover object-top h-full" src={Shadakah3} alt="Shadakah3" /></div>
         </div>
 
         <div class="rounded-[10px] overflow-hidden flex
-        flex-col gap-5 w-3/12">
+        flex-col gap-5 w-[calc(50%-10px)] md:w-3/12">
             <div class="h-1/2 flex
             flex-col gap-4">
                 <a href={projectUrl} class="rounded-[10px] h-1/2 flex items-center justify-center overflow-hidden bg-pmg hover:bg-[#2c8d58]">
-                        <h3 class="text-base font-medium">View Project</h3>                                      
+                        <h3 class="text-base text-white font-normal md:font-medium">View Project</h3>                                      
                 </a>
                 <div class="rounded-[10px] h-1/2 w-100 overflow-hidden flex items-center justify-center bg-bgm3 p-5">
                     <img class="object-cover object-top" src={Shadakah4} alt="Shadakah3" />
