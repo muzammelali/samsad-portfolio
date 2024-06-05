@@ -1,0 +1,59 @@
+---
+import { Icon } from "astro-icon/components";
+import { Image } from "astro:assets";
+import uiDesign from "../assets/uiDesign.png";
+import uxDesign from "../assets/uxDesign.png";
+import Button from '../components/generalButton.astro';
+---
+
+<header class="bg-bgm py-10 md:py-28 px-8 md:px-16 rounded-[30px] grid lg:grid-cols-2 gap-y-10 gap-5 items-center">
+    <div class="w-50 relative z-10">
+        <div class="mb-7 flex gap-3 py-2 px-4 rounded-3xl bg-[#1A3927] w-fit items-center">
+            <Icon name="roundDot" size={14} />
+            <p class="font-medium text-[#009A3E] uppercase ">Available for work</p>
+        </div>
+        <h1 class="text-white text-4xl md:text-6xl font-bold leading-tight">LET'S <br> COLLABORATE<br/>
+            <span class="text-pmb">AND SOLVE <br> YOUR PROBLEM</span>
+        </h1>
+        <div class="absolute -z-10 right-12 2xl:right-24 hidden xl:block top-12">
+            <Image src={uiDesign} alt="Ui design" class="max-w-[110px] object-cover"/>
+        </div>
+        <div class="absolute -z-10 -right-10 top-36 2xl:right-2 hidden xl:block">
+            <Image src={uxDesign} alt="Ui design" class="max-w-[110px] object-cover"/>
+        </div>
+    </div>
+
+    <div>
+        <div class=" grid grid-cols-1 gap-x-6 gap-y-6 w-full max-w-[400px] mx-auto lg:ml-auto">
+            <div>
+                <label for="name" class="block text-sm font-medium leading-6 text-white">Name</label>
+                <div class="mt-2">
+                    <input type="text" name="name" placeholder="Your name" id="name" autocomplete="given-name" class="block bg-[#1A1C1F] w-full rounded-lg border border-[#2D2D2D] py-2 px-3 text-white shadow-sm placeholder:text-[#667085] outline-none sm:text-sm sm:leading-6">
+                </div>
+            </div>
+            <div>
+                <label for="Email" class="block text-sm font-medium leading-6 text-white">Email</label>
+                <div class="mt-2">
+                    <input type="email" name="Email" placeholder="example@gmail.com" id="Email" autocomplete="email" class="block bg-[#1A1C1F] w-full rounded-lg border border-[#2D2D2D] py-2 px-3 text-white shadow-sm placeholder:text-[#667085] outline-none sm:text-sm sm:leading-6">
+                </div>
+            </div>
+            <div>
+                <label for="Subject" class="block text-sm font-medium leading-6 text-white">Subject</label>
+                <div class="mt-2">
+                    <input type="text" name="Subject" placeholder="Subject" id="Subject" autocomplete="Subject" class="block bg-[#1A1C1F] w-full rounded-lg border border-[#2D2D2D] py-2 px-3 text-white shadow-sm placeholder:text-[#667085] outline-none sm:text-sm sm:leading-6">
+                </div>
+            </div>
+
+            <div>
+                <label for="Project Details" class="block text-sm font-medium leading-6 text-white">Project Details</label>
+                <div class="mt-2">
+                    <textarea name="ProjectDetails" rows="3" id="ProjectDetails" autocomplete="address-level2" class="block bg-[#1A1C1F] w-full rounded-lg border border-[#2D2D2D] py-2 px-3 text-white shadow-sm placeholder:text-[#667085] outline-none sm:text-sm sm:leading-6 resize-none"> </textarea>
+                </div>
+            </div>
+            <div>
+                <Button href="#" class="blue block w-auto text-center">Send Inquiry</Button>
+            </div>
+        
+      </div>
+    </div>
+</header>
