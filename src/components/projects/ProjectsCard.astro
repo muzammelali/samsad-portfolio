@@ -36,14 +36,14 @@ const colorVariants = {
         <p class="text-white text-end text-base">{projectDate}</p>
     </div>
     <div class="py-5 px-5 bg-bgm">
-        <div class="grid grid-cols-2 gap-5 mb-5">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
             <div class="rounded-[10px] overflow-hidden max-h-[330px] md:max-h-none">
-                <img class="h-full w-full object-cover" src={pImage1} alt="pImage1" />
+                <img class="h-full w-full object-cover aspect-square" src={pImage1} alt="pImage1" />
             </div>
 
             <div class="rounded-[10px] overflow-hidden flex flex-col gap-5 gap-y-5">
-                <div class="grid grid-cols-2 gap-5 align-center md:h-1/2">
-                    <div class="grid grid-cols-2 gap-3 gap-y-3 justify-center items-center bg-bgm3 p-5 rounded-[10px]">
+                <div class="grid grid-cols-2 gap-5 align-center md:h-1/2 md:order-first order-2">
+                    <div class="grid grid-cols-2 gap-3 gap-y-3 justify-center items-center bg-bgm3 p-3 md:p-5 rounded-[10px]">
                         <div class={`flex items-center justify-center ${colorVariants[color1]} rounded-[10px] py-[10px] px-3 h-full w-full`}>
                             <img src={pImage6_1} alt="Logo" />
                         </div>
@@ -57,26 +57,26 @@ const colorVariants = {
                             <img src={pImage6_1} alt="Logo" />
                         </div>
                     </div>
-                    <a href={projectUrl} class=`rounded-[10px] h-20 md:h-full w-full flex items-center justify-center overflow-hidden ${colorVariants[color2]}`>
+                    <a href={projectUrl} class=`rounded-[10px] h-full w-full flex items-center justify-center overflow-hidden ${colorVariants[color2]}`>
                         <h3 class="text-base text-white font-normal md:font-medium">View Project</h3>                                      
                     </a>
                 </div>
                 
                 <div class="rounded-[10px] h-20 md:h-1/2 w-100 overflow-hidden flex items-center justify-center bg-bgm3 p-5">
                     <img class="object-cover object-top" src={pImage5} alt="pImage3" />
-                </div>     
+                </div>
             </div>   
         </div>
         
-        <div class="rounded-[10px] overflow-hidden grid grid-cols-3 gap-5 gap-y-5">
+        <div class="rounded-[10px] overflow-hidden grid grid-cols-3 gap-3 md:gap-5 gap-y-3 md:gap-y-5">
             <div class="rounded-[10px] overflow-hidden">
-                <img class="object-cover object-top h-full aspct-square w-full" src={pImage2} alt="pImage2" />
+                <img class="object-cover object-top h-full aspect-square w-full" src={pImage2} alt="pImage2" />
             </div>
             <div class="rounded-[10px] overflow-hidden bg-bgm3">
-                <img class="object-cover object-top h-full aspct-square w-full" src={pImage3} alt="pImage3" />
+                <img class="object-cover object-top h-full aspect-square w-full" src={pImage3} alt="pImage3" />
             </div>
             <div class="rounded-[10px] overflow-hidden">
-                <img class="object-cover object-top h-full aspct-square w-full" src={pImage4} alt="pImage3" />
+                <img class="object-cover object-top h-full aspect-square w-full" src={pImage4} alt="pImage3" />
             </div>
         </div>
              

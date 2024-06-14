@@ -1,0 +1,33 @@
+---
+import Footer from "../components/Footer.astro";
+import Hero from "../components/Hero.astro";
+import Navbar from "../components/Navbar.astro";
+import UikitCard from "../components/uikitCard.astro";
+import Layout from "../layouts/Layout.astro";
+const cardImage1 = "/RentX2.png"
+const cardImage2 = "/cardImage2.png"
+const cardImage3 = "/SpeakIn1.png"
+---
+
+<Layout>
+    <main class="py-5 md:py-10 container">
+        <Navbar />
+        <Hero />        
+        <div class="pt-[100px]"></div>
+        <h2 class="text-white mb-10 text-center font-bold text-4xl md:text-[40px] font-Montserrat not-italic">UIKit</h2>
+    <div class="md:grid-cols-2 lg:grid-cols-3 last:md:col-span-2 justify-center grid gap-7 mb-10">
+        <UikitCard cardImage={cardImage1} href="#" class="myrtle" />
+        <UikitCard cardImage={cardImage2} href="#" class="blue" />
+        <UikitCard cardImage={cardImage3} href="#" class="green" />
+
+        <UikitCard cardImage={cardImage1} href="#" class="myrtle" />
+        <UikitCard cardImage={cardImage2} href="#" class="blue" />
+        <UikitCard cardImage={cardImage3} href="#" class="green" />
+        
+        <UikitCard cardImage={cardImage1} href="#" class="myrtle" />
+        <UikitCard cardImage={cardImage2} href="#" class="blue" />
+        <UikitCard cardImage={cardImage3} href="#" class="green" />
+    </div>
+        <Footer />
+    </main>
+</Layout>
